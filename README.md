@@ -1,5 +1,5 @@
 # yt-continue 
-![Test Image 1](logo.png)
+![logo.png](logo.png)
 
 :mega: Chrome extension that bypasses when YouTube asks "Continue Watching?
 
