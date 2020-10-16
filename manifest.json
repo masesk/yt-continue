@@ -6,18 +6,23 @@
     "content_scripts": [
         {
             "matches": [
-                "https://www.youtube.com/*"
+                "*://*.youtube.com/*"
             ],
             "js": [
-                "index.js"
+                "content.js"
             ]
         }
     ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+      },
     "permissions": [
         "downloads",
         "downloads.open",
         "downloads.shelf",
-        "storage"
+        "storage", 
+        "tabs"
     ],
     "icons": {
         "16": "logo.png",
