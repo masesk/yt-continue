@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>YT Continue v0.1</h1>
+    <p>Skip the "Are you still watching?" message while listening to &#127925 on YT</p>
+    <div class="set-width">
+        <div class="inline">
+            <h3 class="inline">YT Continue</h3>
+            <div class="tooltip">&#10068
+                <span class="tooltiptext">If turned on, YT Continue will not pause and ask if you are still
+                    watching.</span>
+            </div>
+        </div>
+        <div class="yt-continue-toggle inline">
+            <input type="checkbox" name="yt-continue-toggle" class="yt-continue-toggle-checkbox"
+                id="myyt-continue-toggle" tabindex="0" checked>
+            <label class="yt-continue-toggle-label" for="myyt-continue-toggle">
+                <span class="yt-continue-toggle-inner"></span>
+                <span class="yt-continue-toggle-switch"></span>
+            </label>
+        </div>
+    </div>
+    <div class="set-width">
+        <h3 class="inline">Speech Controls</h3>
+        <div class="tooltip">&#10068
+            <span class="tooltiptext">If turned on, you can skip, pause, and play using voice commands "Youtube Skip", "Youtube Pause", and "Youtube Play" respectively.
+                Ensure the proper permissions are given.
+            </span>
+        </div>
+        <div class="yt-continue-toggle inline">
+            <input type="checkbox" name="speech-rec-toggle" class="yt-continue-toggle-checkbox" id="speech-rece-toggle"
+                tabindex="1">
+            <label class="yt-continue-toggle-label" for="speech-rece-toggle">
+                <span class="yt-continue-toggle-inner"></span>
+                <span class="yt-continue-toggle-switch"></span>
+            </label>
+        </div>
+    </div>
+</body>
+
+</html>

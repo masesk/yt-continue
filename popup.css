@@ -1,0 +1,106 @@
+body{
+    width: 370px;
+    font-family: 'Lato', sans-serif;
+    padding: 20px;
+}
+
+.set-width{
+    width: 300px
+}
+
+.inline{
+    vertical-align:middle;
+    display: inline-block;
+}
+.yt-continue-toggle {
+    padding-left: 20px;
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.yt-continue-toggle-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.yt-continue-toggle-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.yt-continue-toggle-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.yt-continue-toggle-inner:before, .yt-continue-toggle-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.yt-continue-toggle-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #009E2D; color: #FFFFFF;
+}
+.yt-continue-toggle-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.yt-continue-toggle-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.yt-continue-toggle-checkbox:checked + .yt-continue-toggle-label .yt-continue-toggle-inner {
+    margin-left: 0;
+}
+.yt-continue-toggle-checkbox:checked + .yt-continue-toggle-label .yt-continue-toggle-switch {
+    right: 0px; 
+}
+
+
+
+/*TOOLTIP-START*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    padding: 2
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 7px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+/*TOOLTIP-END*/
