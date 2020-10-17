@@ -119,12 +119,12 @@ const startRecognition = () => {
 
     recognition.onaudiostart = function (event) {
         //Fired when the user agent has started to capture audio.
-        console.log('SpeechRecognition.onaudiostart');
+        //console.log('SpeechRecognition.onaudiostart');
     }
 
     recognition.onaudioend = function (event) {
         //Fired when the user agent has finished capturing audio.
-        console.log('SpeechRecognition.onaudioend');
+        //console.log('SpeechRecognition.onaudioend');
     }
 
     recognition.onend = function (event) {
@@ -132,31 +132,31 @@ const startRecognition = () => {
         if (reconitionEnabled) {
             recognition.start();
         }
-        console.log('SpeechRecognition.onend');
+        //console.log('SpeechRecognition.onend');
     }
 
     recognition.onnomatch = function (event) {
         //Fired when the speech recognition service returns a final result with no significant recognition. This may involve some degree of recognition, which doesn't meet or exceed the confidence threshold.
-        console.log('SpeechRecognition.onnomatch');
+        //console.log('SpeechRecognition.onnomatch');
     }
 
     recognition.onsoundstart = function (event) {
         //Fired when any sound — recognisable speech or not — has been detected.
-        console.log('SpeechRecognition.onsoundstart');
+        //console.log('SpeechRecognition.onsoundstart');
     }
 
     recognition.onsoundend = function (event) {
         //Fired when any sound — recognisable speech or not — has stopped being detected.
-        console.log('SpeechRecognition.onsoundend');
+        //console.log('SpeechRecognition.onsoundend');
     }
 
     recognition.onspeechstart = function (event) {
         //Fired when sound that is recognised by the speech recognition service as speech has been detected.
-        console.log('SpeechRecognition.onspeechstart');
+        //console.log('SpeechRecognition.onspeechstart');
     }
     recognition.onstart = function (event) {
         //Fired when the speech recognition service has begun listening to incoming audio with intent to recognize grammars associated with the current SpeechRecognition.
-        console.log('SpeechRecognition.onstart');
+        //console.log('SpeechRecognition.onstart');
     }
 }
 

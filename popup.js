@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
     var enabled;
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
         chrome.tabs.sendMessage(tabs[0].id, {isRecEnabled: true}, function (response) {
-            rec.checked = response.recEnabled
+            if(response !== undefined)
+                rec.checked = response.recEnabled
         });
     });
     getToggle(function (toggle) {
