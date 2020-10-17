@@ -1,7 +1,7 @@
 # yt-continue 
 ![logo.png](logo.png)
 
-:mega: Chrome extension that bypasses when YouTube asks "Continue Watching?
+:mega: Chrome extension that bypasses when YouTube asks "Continue Watching?" as well as play, pause, and skip a video with voice commands.
 
 ### Requirements
 
@@ -23,7 +23,12 @@
 
 ### How to use
 
-
-1. Click on the green Youtube icon from your top-right extension list and ensure it is set to "On" (it should be by default)
+#### YT Continue
+1. Click on the green Youtube icon from your top-right extension list and ensure YT Continue is set to ON (it should be by default)
 3. Navigate to [https://youtube.com](https://youtube.com) and start your playlist
 4. Sit back and enjoy unlimited music :musical_note:
+
+#### Speech Recognition
+1. Click on the green YouTube icon from your top-right extension list and ensure it is set to ON (it will be OFF by default)
+2. Ensure the YouTube tab has the proper permission to use the microphone. [Follow these instructions if needed](https://support.google.com/chrome/answer/2693767).
+3. Say "YouTube pause" to pause the playing video, "YouTube play" to play the playing video, or "YouTube skip" to skip to the next song in the playlist or in Autoplay.
